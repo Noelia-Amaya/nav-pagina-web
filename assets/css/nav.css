@@ -16,8 +16,8 @@
     --colorComplementarySecondary: #000000;
 
     --fontTitle: "Cream Cake", sans-serif;
-    --fontBodyPrimary: "Poppins", sans-serif;
-    --fontBodySecondary: "Montserrat", sans-serif;
+    --fontSubtitle: "Montserrat", sans-serif;
+    --fontBody: "Poppins", sans-serif;
 }
 
 /* *FORMATEAR PÁGINA */
@@ -35,7 +35,7 @@
 html body {
     width: 100%;
     background-color: var(--colorComplementaryPrimary);
-    font-family: var(--fontBodyPrimary);
+    font-family: var(--fontBody);
     font-style: normal;
     font-weight: 400;
 }
@@ -43,17 +43,12 @@ html body {
 /* * INICIAR CON ESTILOS DESDE MOBILE */
 .logo {
     width: 3rem;
-    height: 3rem;
-    margin-left: 46%;
-    border-radius: 10rem;
-    background-color: var(--colorComplementaryPrimary);
+    margin-left: 28%;
 }
 
 .logo img {
-    width: 5rem;
-    height: 5rem;
+    width: 12rem;
     margin-top: 0.3rem;
-    margin-left: -0.35rem;
 }
 
 nav {
@@ -63,7 +58,7 @@ nav {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    background-color: var(--colorPrimary);
+    background-color: var(--colorTertiary);
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -82,11 +77,11 @@ nav a {
     height: 100%;
     display: flex;
     align-items: center;
-    color: var(--colorComplementaryPrimary);
+    color: var(--colorSecondary);
 }
 
 nav li:hover {
-    background-color: var(--colorTertiary);
+    background-color: var(--colorPrimary);
 }
 
 .sideBar {
@@ -96,7 +91,7 @@ nav li:hover {
     width: 60%;
     min-height: 100vh;
     z-index: 999;
-    background-color: var(--colorPrimary);
+    background-color: var(--colorTertiary);
     box-shadow: 5px 0px 10px 5px rgba(0, 0, 0, 0.2);
     flex-direction: column;
     align-items: flex-start;
@@ -111,10 +106,11 @@ nav li:hover {
 .sideBar a {
     width: 100%;
     margin-left: 6%;
+    
 }
 
 .sideBar a:hover {
-    color: var(--colorPrimary);
+    color: var(--colorTertiary);
 }
 
 .esconderEnMobile {
@@ -136,8 +132,12 @@ nav li:hover {
 .menu-boton svg,
 .close-boton svg {
     width: 2.5rem;
-    fill: var(--colorComplementaryPrimary);
+    fill: var(--colorSecondary);
 }
+
+svg:hover {
+    fill: var(--colorPrimary);
+  }
 
 .menu-boton:hover,
 .close-boton:hover {
@@ -150,22 +150,23 @@ nav li:hover {
 
 .nav_iconos i {
     margin-right: 1rem;
-    color: var(--colorComplementaryPrimary);
+    color: var(--colorSecondary);
     font-size: 1.25rem;
 }
 
 .nav_iconos i:hover {
-    color: var(--colorTertiary);
+    color: var(--colorPrimary);
 }
 
 /* *MEDIA QUERY TABLET */
 @media screen and (min-width: 768px) {
     .logo {
-        width: 3rem;
-        height: 3rem;
         margin-left: 3%;
         border-radius: 10rem;
-        background-color: var(--colorComplementaryPrimary);
+    }
+
+    .logo img {
+        width: 6rem;
     }
 
     .menu-boton {
@@ -183,22 +184,22 @@ nav li:hover {
     }
 
     nav li {
-        padding: 0.5rem;
+        padding: 1rem;
     }
 
     nav li:hover {
-        border-radius: 0.5rem;
-        background-color: var(--colorTertiary);
+        border-radius: 3rem;
+        background-color: var(--colorPrimary);
     }
 
     nav a:hover {
-        color: var(--colorPrimary);
+        color: var(--colorTertiary);
     }
 
     .esconderEnMobile {
         display: block;
         margin: 0 auto;
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .nav_iconos {
@@ -214,11 +215,14 @@ nav li:hover {
 @media screen and (min-width: 1024px) {
     .logo {
         width: 3rem;
-        height: 3rem;
         margin-left: 2%;
         border-radius: 10rem;
-        background-color: var(--colorComplementaryPrimary);
     }
+
+    .logo img {
+        width: 10rem;
+    }
+
 
     .esconderEnMobile {
         font-size: 16px;
