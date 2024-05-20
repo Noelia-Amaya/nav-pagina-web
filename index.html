@@ -1,38 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="./assets/css/nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    <nav>
-        <ul class="sideBar">
-            <li onclick=esconderSideBar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Login</a></li>
-            <li><a href="#">Nostros</a></li>
-            <li><a href="#">Productos</a></li>
-            <li><a href="#">Personalizar torta</a></li>
-            <li><a href="#">Contacto</a></li>
-            <li><a href="#">Carrito</a></li>
-        </ul>
 
-        <ul>
-            <li class="logo"><a href="#"><img src="Logo1.png" alt="Logo"></a></li>
-            <li class="esconderEnMobile"><a href="#">Inicio</a></li>
-            <li class="esconderEnMobile"><a href="#">Login</a></li>
-            <li class="esconderEnMobile"><a href="#">Nostros</a></li>
-            <li class="esconderEnMobile"><a href="#">Productos</a></li>
-            <li class="esconderEnMobile"><a href="#">Personalizar torta</a></li>
-            <li class="esconderEnMobile"><a href="#">Contacto</a></li>
-            <li class="esconderEnMobile"><a href="#">Carrito</a></li>
-            <li class="menu-boton" onclick=mostrarSideBar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
-        </ul>
-    </nav>
+    <header class="header_contenedor">
 
-    <script src="app.js"></script>
-    
+        <nav class="header_nav">
+
+            <a href="#" class="logo"><img src="./assets/img/logo1.png" alt="Logo"></a>
+
+            <ul class="sideBar">
+                <li class="close-boton" onclick=esconderSideBar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 -960 960 960">
+                            <path
+                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                        </svg></a>
+                </li>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Personalizar torta</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+
+            <ul>
+                <li class="esconderEnMobile"><a href="#">Inicio</a></li>
+                <li class="esconderEnMobile"><a href="#">Nosotros</a></li>
+                <li class="esconderEnMobile"><a href="#">Productos</a></li>
+                <li class="esconderEnMobile"><a href="#">Personalizar torta</a></li>
+                <li class="esconderEnMobile"><a href="#">Contacto</a></li>
+                <li class="menu-boton" onclick=mostrarSideBar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 -960 960 960">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                        </svg></a></li>
+            </ul>
+
+            <div class="nav_iconos">
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="#"><i class="fa fa-user"></i></a>
+            </div>
+
+        </nav>
+
+    </header>
+
+    <script src="./assets/js/app.js"></script>
+
 </body>
+
 </html>
