@@ -117,7 +117,6 @@ nav li:hover {
     color: var(--colorPrimary);
 }
 
-
 .esconderEnMobile {
     display: none;
 }
@@ -159,7 +158,6 @@ nav li:hover {
     color: var(--colorTertiary);
 }
 
-
 /* *MEDIA QUERY TABLET */
 @media screen and (min-width: 768px) {
     .logo {
@@ -184,12 +182,17 @@ nav li:hover {
         width: 60%;
     }
 
+    nav li {
+        padding: 0.5rem;
+    }
+
     nav li:hover {
-        background-color: transparent;
+        border-radius: 0.5rem;
+        background-color: var(--colorTertiary);
     }
 
     nav a:hover {
-        color: var(--colorTertiary);
+        color: var(--colorPrimary);
     }
 
     .esconderEnMobile {
@@ -197,7 +200,6 @@ nav li:hover {
         margin: 0 auto;
         font-size: 14px;
     }
-
 
     .nav_iconos {
         margin-right: 1%;
